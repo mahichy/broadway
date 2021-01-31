@@ -1,1 +1,8 @@
-<h1>Woop!</h1>
+
+		
+<% @plays.each do |play| %>
+	<%= link_to play.title, play_path(play)%>
+<% end -%>
+
+
+<%= link_to "New Play", new_play_path %>
